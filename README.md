@@ -31,6 +31,13 @@ python LFVol_Recon.py --trnLF-file "LF.mat" --weights-fileG "epochG.pth"
 ```
 Dependencies: `modelsAdv.py`, `utils.py`  
 For volumetric reconstruction of LF video, the input to trnLF-file is the LF video frames. To reconstruct a volume of active neurons, the input is the activity map.
+
+**5. Calcium time series extraction** \
+Usage:
+```
+python LNet_Matrix_ROI.py
+```
+Dependencies: `jGCaMP8f_helperFuns.py` 
  
 ## Versions
 Python 3  
