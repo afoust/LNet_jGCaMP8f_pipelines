@@ -822,6 +822,7 @@ def make_SIDlabels( centroids ):
 
 def show_volAndlabels( vol, labels, namestr ):
     viewer = napari.Viewer()
+    viewer.theme = 'dark'
     viewer.dims.ndisplay = 3
     viewer.add_image(vol, name = namestr, scale=(2, 1.667, 1.667) )
     layer = viewer.add_labels(labels.astype("uint8"), name = namestr, scale=(2, 1.667, 1.667))

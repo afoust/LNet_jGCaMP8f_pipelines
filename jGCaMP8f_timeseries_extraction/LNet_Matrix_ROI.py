@@ -1,5 +1,6 @@
 import hdf5storage
 import pyclesperanto_prototype as cle
+import numpy as np
 import jGCaMP8f_helperFuns as hpf
 
 # Replace with path and name of activation volumes reconstructed by LNet
@@ -37,3 +38,9 @@ TlnROI = hpf.extract_time_series_from_vols( volsLN, cle.pull(seg) )
 
 # Plot the time series
 hpf.plot_timeSeries( TlnROI, layer )
+
+# Replace with path and name of file for saving the time series obtained with
+# LNet Matrix
+np.save(r'/Volumes/home/jGCaMP8f_analysis/activeCellsVolumes/T_LNmat_fr0to499_A4', T)
+# LNet ROI
+np.save(r'/Volumes/home/jGCaMP8f_analysis/activeCellsVolumes/T_LNroi_fr0to499_A4', TlnROI)
