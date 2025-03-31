@@ -455,7 +455,8 @@ def extract_timeSeries( segmented, vol, LFvideo ):
 
     frames = LFvideo.shape[0]
 
-    weights_fileFl = r'/Users/starz/Documents/data_analysis/jGCaMP8f/epochFl_24.pth'
+    # Set this to path and filename to LFM forward model CNN weights 
+    weights_fileFl = r'/Volumes/home/jGCaMP8f_analysis/jGCaMP8f_paperData/weights/epochFl_24.pth'
 
     Fl=multConvFModel(nDepths=nDepths,s=s,V=V,NxN=N_*N_,haarL=haarL,l=l,c=c).to(device)
 
