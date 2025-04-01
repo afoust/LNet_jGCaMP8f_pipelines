@@ -44,9 +44,7 @@ Python 3
 Matlab 2024a
 
 ## Dataset
-To be uploaded on Zenodo
-
-Network weights (not refined) are also available on Zenodo. 
+The raw light-field videos and LNet training weights are deposited at [Zenodo](https://doi.org/10.5281/zenodo.14900715)
 
 ## LNet
 For training from scratch using LNet (ie. not fine-tuning weights as in Step 3 above), code for the network can be found [here](https://github.com/hverinaz/LFM-2P)
