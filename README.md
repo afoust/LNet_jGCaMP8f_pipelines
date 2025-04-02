@@ -17,12 +17,15 @@ python makeLFactivityMapFromLFvideo.py
 Dependencies: `jGCaMP8f_helperFuns.py`, `modelsAdv.py`, `utils.py`
 
 **3. Finetuning Weights** \
-Usage:
+Usage (for fine-tuning with activity map):
 ```
-python LF2P_FineTune.py --trnVol-file "2P.mat" --trnLF-file "LF1.mat" --trnLF2-file "LF2.mat" --trnLF3-file "LF3.mat" --trnLF4-file "LF4.mat" --outputs-dir "./outputs" --weights-fileFl "epochFl.pth" --weights-fileG "epochG.pth" --weights-fileD "epochD.pth" --batch-size 2 --num-epochs 10
+python LF2P_FineTune_ActivityMap.py --trnVol-file "2P.mat" --trnLF-file "LF1.mat" --trnLF2-file "LF2.mat" --trnLF3-file "LF3.mat" --trnLF4-file "LF4.mat" --outputs-dir "./outputs" --weights-fileFl "epochFl.pth" --weights-fileG "epochG.pth" --weights-fileD "epochD.pth" --batch-size 2 --num-epochs 10
+```
+Usage (for fine-tuning with LF time sequences):
+```
+python LF2P_FineTune_LFSeq.py --trnVol-file "2P.mat" --trnLF-file "LF1.mat" --trnLF2-file "LF2.mat" --trnLF3-file "LF3.mat" --trnLF4-file "LF4.mat" --trnLF5-file "LF5.mat" --trnLF6-file "LF6.mat" --trnLF7-file "LF7.mat" --trnLF8-file "LF8.mat" --outputs-dir "./outputs" --weights-fileFl "epochFl.pth" --weights-fileG "epochG.pth" --weights-fileD "epochD.pth" --batch-size 2 --num-epochs 100
 ```
 Dependencies: `modelsAdv.py`, `utils.py`  
-For fine-tuning with LF videos, all 4 LF file inputs are LF video files. For fine-tuning with activity maps, the input to `trnLF4-file` is the activity map(s). 
 
 **4. Volume Reconstruction** \
 Usage:
