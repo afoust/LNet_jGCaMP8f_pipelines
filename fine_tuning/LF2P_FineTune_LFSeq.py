@@ -25,10 +25,6 @@ from random import randint
 from utils import AverageMeter, calc_psnr
 from modelsAdv import *
 
-#python mainLF2PFTune.py --trnVol-file "./data2PLF/2p_S4A2.mat"   --trnLF-file "./data2PLF/newD2PwithTmpPad.mat"  --trnLF2-file "./data2PLF/newD2PwithTmpS1A2Pad.mat"  --trnLF3-file "./data2PLF/newD2PwithTmpS2A3Pad.mat"  --trnLF4-file "./newExprm/lfTmps1a1d2.mat"  --trnLF5-file "./newExprm/lfTmps1a2d1_2.mat"  --trnLF6-file "./newExprm/lfTmps1a1d1.mat"  --trnLF7-file "./newExprm/lfTmps1a2d1_1.mat"  --trnLF8-file "./newExprm/lfTmps2a1d1.mat"  --outputs-dir "./outputs"           --weights-fileFl "./submssionYes/epochFl_24.pth"    --weights-fileG "./submssionYes/epochG_40.pth"   --weights-fileD "./submssionYes/epochD_40.pth"     --batch-size 2 --num-epochs 3000     
-
-
-
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--trnVol-file', type=str, required=True)
